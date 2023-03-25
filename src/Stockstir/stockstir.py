@@ -32,9 +32,9 @@ class gatherInfo:
 		#Main regex to find it all :)
 		price = re.findall('(?<="price":")(.*)(?=","priceChange":")', source)
 		
-		#Join the found list from the "re" library:
+		#Replace any commas in the found list from the "re" library:
 		
-		price = float(' '.join(price))
+		price = float(price[0].replace(",", ''))
 		
 		return price
 	
