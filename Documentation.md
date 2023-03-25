@@ -111,13 +111,13 @@ The reason we do this is because this section of the guide will only be using th
 
 **IMPORTANT INFORMATION BEFORE YOU PROCEED:**
 
-stockSymbol = company symbol (ticker symbol). Ex: "TSLA". type = str
-iterations = Number of data samples to gather. type = int
-randomUserAgent = use a random user agent out of 24 user agents. type = bool
-breakInterval = time between each data sample gathered, default is 5 seconds (Lowering this could result in duplicate values). type = int
-antiBan = Randomizes request time, making it less suspicious that the requests are automated. type = bool
-printOUTPUT = print each stock value every iteration. type = bool
-returnTimeSpent = Returns the total time spent at gathering the samples. type = bool
+- stockSymbol = company symbol (ticker symbol). Ex: "TSLA". type = str
+- iterations = Number of data samples to gather. type = int
+- randomUserAgent = use a random user agent out of 24 user agents. type = bool
+- breakInterval = time between each data sample gathered, default is 5 seconds (Lowering this could result in duplicate values). type = int
+- antiBan = Randomizes request time, making it less suspicious that the requests are automated. type = bool
+- printOUTPUT = print each stock value every iteration. type = bool
+- returnTimeSpent = Returns the total time spent at gathering the samples. type = bool
 
 The parameters listed above are the parameters that you will encounter in this section of the documentation. Please take a look before proceeding.
 
