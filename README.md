@@ -21,6 +21,12 @@ ____________________________________________________________________________
 - Initial Release! :)
 
 ## **Usage**
+
+Installation:
+```
+pip install Stockstir
+```
+
 Importing:
 ```
 import Stockstir
