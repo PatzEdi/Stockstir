@@ -8,8 +8,11 @@ Instantly and easily gather stock data in real time of any company in any of you
 .. image:: img/stockstirlogo.jpeg
 
 .. image:: https://img.shields.io/badge/Creator-PatzEdi-brightgreen.svg
+   :align: center
 .. image:: https://img.shields.io/badge/License-MIT-brightgreen.svg
+   :align: center
 .. image:: https://img.shields.io/badge/Version-Latest-brightgreen.svg
+   :align: center
 
 .. note::
 
