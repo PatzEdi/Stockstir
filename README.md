@@ -18,8 +18,8 @@ Instantly and easily gather stock data in real time of any company in any of you
 
 ## **Made with Python, made with passion: Stockstir is a way to gather stock data from any Python script in an easy and quick way.** 
 ____________________________________________________________________________
-## **CHANGELOG: 1.0.1**
-- Fixed bug where any stock value greater than 999.99 would give type errors.
+## **CHANGELOG: 1.0.2**
+- Added documentation to readthedocs.org. Now, the documentation is much easier to access and read through!
 
 ## **Usage**
 
