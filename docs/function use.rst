@@ -52,6 +52,7 @@ It also takes in one optional parameter: randomUserAgent
 If you want the most basic usage, you can do so like this:
 
 .. code-block:: python
+
     singlePrice = Tools.getSinglePrice("stockSymbol") #Replace the stockSymbol with any other company, and make sure its in quotations!
 
     print(singlePrice)
@@ -61,6 +62,7 @@ The above code will store the returned value of the getSinglePrice function into
 If you want to use the optional parameter "randomUserAgent", you can do so like this:
 
 .. code-block:: python
+
     singlePrice = Tools.getSinglePrice("stockSymbol", randomUserAgent = True) #Replace the stockSymbol with any other company, and make sure its in quotations!
 
     print(singlePrice)
@@ -73,6 +75,7 @@ The ``multiDataGathering`` function is the most complex of functions as it has m
 Here is the basic usage that only uses the required parameters:
 
 .. code-block:: python
+
     stockPrices = Tools.multiDataGathering("stockSymbol", iterations) #The iterations parameter is in the form of an integer.
 
     print(stockPrices)
@@ -82,6 +85,7 @@ Here, the printed value of the variable stockPrices is going to be returned as a
 This is the basic us of this function. Now, lets take a look at the full function with all of its parameters:
 
 .. code-block:: python
+
     stockPrices = Tools.multiDataGathering("stockSymbol", iterations, breakInterval = 5, antiBan = False, randomUserAgent = False, printOUTPUT = False, returnTimeSpent = False)
 
 Here, you can see all of the other parameters. Let's go through them:
@@ -106,6 +110,7 @@ Usage of the ``getTrend`` Function:
 The ``getTrend`` function is very simple and easy to use. Here is the basic usage:
 
 .. code-block:: python
+
     Trend = Tools.getTrend(pricesList)
 
 The pricesList is in the form of a list. You can get the pricesList by using the ``multiDataGathering`` function and storing its output in a variable, or putting the ``getSinglePrice`` function in a for loop yourself.
@@ -149,6 +154,7 @@ If you want to give more parameters, you do not necessarily have to have both th
 Say you have the timeSpent variable that you gathered from the ``multiDataGathering`` function, and you got the trend from the ``getTrend`` function:
 
 .. code-block:: python
+    
     Tools.saveDataToFile(data, saveFilePath, timeSpent = timeSpent, trend = Trend)
 
 

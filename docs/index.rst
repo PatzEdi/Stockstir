@@ -1,4 +1,4 @@
-Welcome to the official Stockstir Library documentation on Github!
+Welcome to the official Stockstir Library documentation!
 ==================================================================
 
 **Stockstir**
@@ -14,7 +14,7 @@ Instantly and easily gather stock data in real time of any company in any of you
 
 .. figure:: https://img.shields.io/badge/Version-Latest-brightgreen.svg 
    :align: center
-   
+
 .. figure:: https://img.shields.io/badge/Creator-PatzEdi-brightgreen.svg
    :align: center
 

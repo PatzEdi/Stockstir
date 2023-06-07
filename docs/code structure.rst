@@ -24,6 +24,7 @@ The ``gatherPrice`` Function:
 This function works by taking the source code that the ``getSource`` function returns as a parameter, and uses the re library to use a regex that finds the price in the web page URL. The regex works by finding what is in between certain keywords which were in the source. I found out that CNBC does not change in terms of code when switching companies, so this method was universal for all companies in order to get the stock price. 
 
 **Important note of these functions and the gatherInfo Class in general:**
+
 .. note::
 
    The functions in the **gatherInfo** class should not be used if you want to gather stock price. The only thing these functions do is make it easier to make and structure the functions under the **Tools** class, which combines these two functions together to make the tools you need. Feel free to use these functions if you would like to, though the **Tools** class covers the features that you will actually be using.
