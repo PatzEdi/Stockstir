@@ -13,7 +13,8 @@ Instantly and easily gather stock data in real time of any company in any of you
 </p>
 
 ## **Important Note:**
-The full documentation for this tool is under the [Documentation](/Documentation.md) file under the project files. Take a look to explore the features of Stockstir and how to use them, as well as getting to know how Stockstir works in a detailed way.
+
+**The full documentation for this library is now hosted on readthedocs.org! [ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html) file under the project files. Take a look to explore the features of Stockstir and how to use them, as well as getting to know how Stockstir works in a detailed way.**
 
 ## **Made with Python, made with passion: Stockstir is a way to gather stock data from any Python script in an easy and quick way.** 
 ____________________________________________________________________________
@@ -35,7 +36,7 @@ Simple example to gather stock data from any website:
 ```
 Stockstir.Tools.getSinglePrice("ticker/stockSymbol")
 ```
-Since this library has many more features (too many to explain here in a neat way), you can take a look at the [Documentation](/Documentation.md) file under the project files.
+Since this library has many more features (too many to explain here in a neat way), you can take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) file under the project files.
 
 ## **Features**
 - Instantly gather stock prices from any company in real time.
@@ -61,7 +62,7 @@ ____________________________________________________________________________
 ## **User notice**
 - Please be aware that using a rotating IP address (for example a VPN with a rotating IP) could help you not get banned from the website CNBC when making a lot of requests. If you want to use the multi data gathering tool, you can use the anti ban function to try to avoid getting banned from the website and being recognized as a potential "bot" making automatic requests.
 - This project is still a work in progress. Adding new features is very easy, but so far I have started with it simple. 
-- Please note that the README file briefly goes into the details of how the project works. If you want more in depth details of what each and every function and parameter does, take a look at the [Documentation](/Documentation.md) file in the project files.
+- Please note that the README file briefly goes into the details of how the project works. If you want more in depth details of what each and every function and parameter does, take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) file in the project files.
 ____________________________________________________________________________
 ## **Services used (Credits):**
 - [Requests module](https://requests.readthedocs.io/en/latest/)

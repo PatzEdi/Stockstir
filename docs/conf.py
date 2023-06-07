@@ -2,8 +2,8 @@ project = 'Stockstir'
 copyright = '2023, PatzEdi'
 author = 'PatzEdi'
 
-release = '1.0'
-version = '1.0'
+release = '1.0.1'
+version = '1.0.1'
 
 extensions = [
     'sphinx.ext.duration',

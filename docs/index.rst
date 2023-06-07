@@ -1,7 +1,8 @@
 Welcome to the official Stockstir Library documentation on Github!
 ==================================================================
 
-# **Stockstir**
+**Stockstir**
+
 Instantly and easily gather stock data in real time of any company in any of your python scripts
 
 .. image:: img/stockstirlogo.jpeg
