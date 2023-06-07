@@ -19,7 +19,7 @@ Instantly and easily gather stock data in real time of any company in any of you
 
 Index:
 ------
-* :doc:`installaion` - Installation instructions for Stockstir
+* :doc:`installation` - Installation instructions for Stockstir
 * :doc:`code structure` - Explains how each function works in different classes used.
 * :doc:`function use` - Explains in detail what you as the user can do with this library. Check out the 
 * :doc:`credits`
