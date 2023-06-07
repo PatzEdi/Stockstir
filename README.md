@@ -8,6 +8,8 @@ Instantly and easily gather stock data in real time of any company in any of you
 		height="23">
 	<img src="https://img.shields.io/badge/Creator-PatzEdi-brightgreen"
 		height="23">
+	<img src="https://readthedocs.org/projects/stockstir/badge/?version=latest"
+		height="23">
 	<img src="https://img.shields.io/badge/Version-Latest-brightgreen"
 		height="23">
 </p>
