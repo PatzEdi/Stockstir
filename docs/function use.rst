@@ -17,7 +17,7 @@ If you want to import the full library:
 
 **IMPORTANT: For the purpose of this part of the documentation, we will be importing the library like so:**
 
-.. code-block:: console
+.. code-block:: python
 
     from Stockstir import Tools
 
@@ -79,6 +79,7 @@ Here is the basic usage that only uses the required parameters:
     stockPrices = Tools.multiDataGathering("stockSymbol", iterations) #The iterations parameter is in the form of an integer.
     print(stockPrices)
 
+
 Here, the printed value of the variable stockPrices is going to be returned as a list of values, and the amount of those values depends on the number you put as the value for the iterations parameter. 
 
 This is the basic us of this function. Now, lets take a look at the full function with all of its parameters:
@@ -86,6 +87,7 @@ This is the basic us of this function. Now, lets take a look at the full functio
 .. code-block:: python
 
     stockPrices = Tools.multiDataGathering("stockSymbol", iterations, breakInterval = 5, antiBan = False, randomUserAgent = False, printOUTPUT = False, returnTimeSpent = False)
+
 
 Here, you can see all of the other parameters. Let's go through them:
 
@@ -112,6 +114,7 @@ The ``getTrend`` function is very simple and easy to use. Here is the basic usag
 
     Trend = Tools.getTrend(pricesList)
 
+
 The pricesList is in the form of a list. You can get the pricesList by using the ``multiDataGathering`` function and storing its output in a variable, or putting the ``getSinglePrice`` function in a for loop yourself.
 
 The variable Trend will store a value in terms of a string. 
@@ -122,8 +125,8 @@ If you want to use the optional parameter returnChange, you can do so like this:
 
     Trend, Change = Tools.getTrend(pricesList, returnChange = True)
 
-This will store the change of the last and the first data sample in the variable Change, which can be used to analyze data with the usage of the returnTimeSpent parameter in the ``multiDataGathering`` function. 
 
+This will store the change of the last and the first data sample in the variable Change, which can be used to analyze data with the usage of the returnTimeSpent parameter in the ``multiDataGathering`` function. 
 
 Usage of the ``saveDataToFile`` Function:
              ++++++++++++++++++
