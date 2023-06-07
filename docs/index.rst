@@ -7,16 +7,9 @@ Instantly and easily gather stock data in real time of any company in any of you
 
 .. image:: img/stockstirlogo.jpeg
 
-.. raw:: html
-   <p align="center">
-	<img src="https://img.shields.io/badge/License-MIT-brightgreen"
-		height="23">
-	<img src="https://img.shields.io/badge/Creator-PatzEdi-brightgreen"
-		height="23">
-	<img src="https://img.shields.io/badge/Version-Latest-brightgreen"
-		height="23">
-   </p>
-
+.. |Author| image:: https://img.shields.io/badge/Creator-PatzEdi-brightgreen.svg
+.. |License| image:: https://img.shields.io/badge/License-MIT-brightgreen.svg
+.. |Version| image:: https://img.shields.io/badge/Version-Latest-brightgreen.svg
 
 .. note::
 
