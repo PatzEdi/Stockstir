@@ -5,7 +5,7 @@ Function Use
 
     The Function Use section of this documentation will only cover the Tools class and its functions, as those are the only ones needed for your data gathering. As stated before, the gatherInfo class should not be touched for your purposes, as the Tools class combines the functions in gatherInfo to make the tools you will be using.
 
-Importing:
+Importing
 ----------
 
 If you want to import the full library:
