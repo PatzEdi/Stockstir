@@ -11,12 +11,14 @@ Importing
 If you want to import the full library:
 
 .. code-block:: python
+
     import Stockstir
 
 
 **IMPORTANT: For the purpose of this part of the documentation, we will be importing the library like so:**
 
 .. code-block:: console
+
     from Stockstir import Tools
 
 
@@ -54,7 +56,6 @@ If you want the most basic usage, you can do so like this:
 .. code-block:: python
 
     singlePrice = Tools.getSinglePrice("stockSymbol") #Replace the stockSymbol with any other company, and make sure its in quotations!
-
     print(singlePrice)
 
 The above code will store the returned value of the getSinglePrice function into the variable singlePrice. You can then view the single price by printing the variable as shown. 
@@ -64,7 +65,6 @@ If you want to use the optional parameter "randomUserAgent", you can do so like 
 .. code-block:: python
 
     singlePrice = Tools.getSinglePrice("stockSymbol", randomUserAgent = True) #Replace the stockSymbol with any other company, and make sure its in quotations!
-
     print(singlePrice)
 
 
@@ -77,7 +77,6 @@ Here is the basic usage that only uses the required parameters:
 .. code-block:: python
 
     stockPrices = Tools.multiDataGathering("stockSymbol", iterations) #The iterations parameter is in the form of an integer.
-
     print(stockPrices)
 
 Here, the printed value of the variable stockPrices is going to be returned as a list of values, and the amount of those values depends on the number you put as the value for the iterations parameter. 
@@ -154,7 +153,7 @@ If you want to give more parameters, you do not necessarily have to have both th
 Say you have the timeSpent variable that you gathered from the ``multiDataGathering`` function, and you got the trend from the ``getTrend`` function:
 
 .. code-block:: python
-    
+
     Tools.saveDataToFile(data, saveFilePath, timeSpent = timeSpent, trend = Trend)
 
 
