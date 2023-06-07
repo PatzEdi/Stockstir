@@ -10,9 +10,10 @@ Instantly and easily gather stock data in real time of any company in any of you
 
 
 .. figure:: https://img.shields.io/badge/License-MIT-brightgreen.svg 
-   .. figure:: https://img.shields.io/badge/Version-Latest-brightgreen.svg 
-   .. figure:: https://img.shields.io/badge/Creator-PatzEdi-brightgreen.svg
+.. figure:: https://img.shields.io/badge/Version-Latest-brightgreen.svg 
    :align: center
+.. figure:: https://img.shields.io/badge/Creator-PatzEdi-brightgreen.svg
+   
 
 
 .. note::
