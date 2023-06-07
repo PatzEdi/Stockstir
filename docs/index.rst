@@ -14,6 +14,7 @@ Instantly and easily gather stock data in real time of any company in any of you
        <img src="https://img.shields.io/badge/Creator-PatzEdi-brightgreen.svg" alt="Badge 1" width="100">
        <img src="https://img.shields.io/badge/Version-Latest-brightgreen.svg" alt="Badge 2" width="100">
        <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="Badge 3" width="100">
+       <img src="https://readthedocs.org/projects/stockstir/badge/?version=latest" alt="Badge 3" width="100">
    </p>
 
 
