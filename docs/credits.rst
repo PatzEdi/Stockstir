@@ -1,5 +1,9 @@
+.. _credits:
+
+***************
 Credits
-=======
+***************
+
 * `Requests module <https://requests.readthedocs.io/en/latest>`_
 * `URLLib module <https://docs.python.org/3/library/urllib.html>`_
 * `Re module <https://docs.python.org/3/library/re.html>`_

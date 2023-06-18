@@ -1,5 +1,8 @@
+.. _code structure:
+
+***************
 Code Structure
-==============
+***************
 
 In the code, there are two classes:::
 

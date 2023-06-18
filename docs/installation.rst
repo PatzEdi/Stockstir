@@ -1,7 +1,8 @@
 .. _installation:
 
+*************
 Installation
-------------
+*************
 
 To install Stockstir, you need to:
 
