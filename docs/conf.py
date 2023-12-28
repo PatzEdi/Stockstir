@@ -23,7 +23,7 @@ templates_path = ['_templates']
 
 
 
-html_theme = 'classic'
+html_theme = 'sphinx_rtd_theme'
 
 
 epub_show_urls = 'footnote'
