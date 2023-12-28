@@ -15,7 +15,7 @@ Instantly and easily gather stock data in real time of any company in any of you
 </p>
 
 ## Thank you to the Starrers!
-[@LeonardPuettmann](https://github.com/LeonardPuettmann), [@Shrhawk](https://github.com/Shrhawk), [@builderjer](https://github.com/builderjer), [@mikudae](https://github.com/mikudae)
+[@bazfire](https://github.com/bazfire), [@AceofSpades5757](https://github.com/AceofSpades5757), [@georgettica](https://github.com/georgettica), [@LeonardPuettmann](https://github.com/LeonardPuettmann), [@Shrhawk](https://github.com/Shrhawk), [@builderjer](https://github.com/builderjer), [@mikudae](https://github.com/mikudae)
 
 If you do not wish to be in the list above, please let me know by either creating an issue or messaging me through reddit (linked on my website https://patzedi.github.io)
 
