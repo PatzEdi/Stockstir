@@ -15,7 +15,7 @@ Instantly and easily gather stock data in real time of any company in any of you
 </p>
 
 ## Thank you to the Starrers!
-[@piksu](https://github.com/piksu), [@cameronhptdev](https://github.com/cameronhptdev),[@bazfire](https://github.com/bazfire), [@AceofSpades5757](https://github.com/AceofSpades5757), [@georgettica](https://github.com/georgettica), [@LeonardPuettmann](https://github.com/LeonardPuettmann), [@Shrhawk](https://github.com/Shrhawk), [@builderjer](https://github.com/builderjer), [@mikudae](https://github.com/mikudae) 
+[@PandaStacker](https://github.com/PandaStacker), [@piksu](https://github.com/piksu), [@cameronhptdev](https://github.com/cameronhptdev),[@bazfire](https://github.com/bazfire), [@AceofSpades5757](https://github.com/AceofSpades5757), [@georgettica](https://github.com/georgettica), [@LeonardPuettmann](https://github.com/LeonardPuettmann), [@Shrhawk](https://github.com/Shrhawk), [@builderjer](https://github.com/builderjer), [@mikudae](https://github.com/mikudae) 
 
 **Thank you for 10 Stars!**
 If you do not wish to be in the list above, please let me know by either creating an issue or messaging me through reddit (linked on my website https://patzedi.github.io). Also, it may take me a while (depending on the time) to put new stargazers on the README, but it will be done nonetheless :)
