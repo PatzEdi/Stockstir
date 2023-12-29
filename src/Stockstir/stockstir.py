@@ -41,7 +41,12 @@ class gatherInfo:
 		# I want the change percentage
 		price = re.findall('(?<="priceChangePercent":")(.*)(?=","priceCurrency":")', source)
 		price = float(price[0].replace(",", ''))
-		return price
+
+		# price may be UNCH, which just means the market isn't open right now.
+		if price == "UNCH":
+			return -1
+		else:
+			return price
 
 	#Allows for the making of requests with a user agent. 
 	def getSourceWithUserAgent(stockSymbol, AgentPositionNumber):
@@ -146,12 +151,8 @@ class Tools:
 				time.sleep(breakInterval)
 		
 		#Return the values:
-		if returnTimeSpent == True and antiBan == True:
-			#Adds all of the spent time gathering the data together:
+		if returnTimeSpent == True:
 			timeSpent = (iterations * breakInterval) + sum(randomDelays)
-			return prices, timeSpent
-		elif returnTimeSpent == True and antiBan == False:
-			timeSpent = (iterations * breakInterval)
 			return prices, timeSpent
 		else:
 			
@@ -172,8 +173,21 @@ class Tools:
 		
 		return price
 
+	#Get a single percentage change:
+	def getSinglePercentChange(stockSymbol, randomUserAgent = False):
+		#Check if the parameter "randomUserAgent" is set to True or False:
+		if randomUserAgent == True:
+			#generate random number to pick a random user agent:
+			randomagentnumber = random.randint(0,24)
+			source = gatherInfo.getSourceWithUserAgent(stockSymbol, randomagentnumber)
+		elif randomUserAgent == False:
+			source = gatherInfo.getSource(stockSymbol)
+		price = gatherInfo.gatherChangePercent(source)
+		
+		return price
+
 	#Get prices for multiple symbols:
-	def getMultiPrices(stockSymbols, breakInterval = 5, antiBan = False, randomUserAgent = False, printOUTPUT = False, returnTimeSpent = False):
+	def getMultiSymbols(stockSymbols, breakInterval = 5, antiBan = False, randomUserAgent = False, printOUTPUT = False, returnTimeSpent = False):
 		
 		#Main price list:
 		prices = []
@@ -190,15 +204,9 @@ class Tools:
 				randomDelays.append(randomdelay)
 				time.sleep(randomdelay)
 			
-			if randomUserAgent == True:
-				#generate random number to pick a random user agent:
-				randomagentnumber = random.randint(0,24)
-				source = gatherInfo.getSourceWithUserAgent(symbol, randomagentnumber)
-			elif randomUserAgent == False:
-				source = gatherInfo.getSource(symbol)
-				
+			getSinglePrice	
 			#Gather the price based on the source:
-			price = gatherInfo.gatherPrice(source)
+			price = getSinglePrice(stock)
 			#append the info:
 			prices.append(price)
 			
@@ -212,12 +220,52 @@ class Tools:
 				time.sleep(breakInterval)
 		
 		#Return the values:
-		if returnTimeSpent == True and antiBan == True:
-			#Adds all of the spent time gathering the data together:
+		#No need to check antiban because sum([]) evaluates to 0
+		if returnTimeSpent == True:
 			timeSpent = (iterations * breakInterval) + sum(randomDelays)
 			return prices, timeSpent
-		elif returnTimeSpent == True and antiBan == False:
-			timeSpent = (iterations * breakInterval)
+		else:
+			return prices
+
+	#Get percentage changes for multiple stocks:
+	#This should be a single function/class because there's only one line changed
+	#from getMultiSymbols, but for now it's fine.
+	def getMultiPercentChanges(stockSymbols, breakInterval = 5, antiBan = False, randomUserAgent = False, printOUTPUT = False, returnTimeSpent = False):
+		
+		#Main price list:
+		prices = []
+		
+		#Used to store time spent values:
+		randomDelays = []
+		
+		for stock in stockSymbols:
+			#Check if antiBan is active:
+			if antiBan == True:
+				#Anti ban, generates random time request:
+				randomdelay = (random.randint(50,100))/100
+				#append the random delay value
+				randomDelays.append(randomdelay)
+				time.sleep(randomdelay)
+			
+			getSinglePrice	
+			#Gather the price based on the source:
+			price = getSinglePercentChange(stock)
+			#append the info:
+			prices.append(price)
+			
+			#Check if the printed output option is active:
+			if printOUTPUT == True:
+				print(price)
+
+			#Sleep for the breakinterval time:
+			#Does not count the last time.sleep if the last iteration finished processing the last request.
+			if (iterations-1) != i:
+				time.sleep(breakInterval)
+		
+		#Return the values:
+		#No need to check antiban because sum([]) evaluates to 0
+		if returnTimeSpent == True:
+			timeSpent = (iterations * breakInterval) + sum(randomDelays)
 			return prices, timeSpent
 		else:
 			return prices
