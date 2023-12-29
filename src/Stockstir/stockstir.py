@@ -25,8 +25,7 @@ class gatherInfo:
 			
 			#If the inputted company/stock symbol is invalid, then an exception will occur:
 			raise Exception("ERR: Could not find symbol/company through CNBC indexes.")
-			
-		
+
 	def gatherPrice(source):
 		
 		#Main regex to find it all :)
@@ -38,6 +37,12 @@ class gatherInfo:
 		
 		return price
 	
+	def gatherChangePercent(source):
+		# I want the change percentage
+		price = re.findall('(?<="priceChangePercent":")(.*)(?=","priceCurrency":")', source)
+		price = float(price[0].replace(",", ''))
+		return price
+
 	#Allows for the making of requests with a user agent. 
 	def getSourceWithUserAgent(stockSymbol, AgentPositionNumber):
 		
@@ -166,7 +171,57 @@ class Tools:
 		price = gatherInfo.gatherPrice(source)
 		
 		return price
-	
+
+	#Get prices for multiple symbols:
+	def getMultiPrices(stockSymbols, breakInterval = 5, antiBan = False, randomUserAgent = False, printOUTPUT = False, returnTimeSpent = False):
+		
+		#Main price list:
+		prices = []
+		
+		#Used to store time spent values:
+		randomDelays = []
+		
+		for stock in stockSymbols:
+			#Check if antiBan is active:
+			if antiBan == True:
+				#Anti ban, generates random time request:
+				randomdelay = (random.randint(50,100))/100
+				#append the random delay value
+				randomDelays.append(randomdelay)
+				time.sleep(randomdelay)
+			
+			if randomUserAgent == True:
+				#generate random number to pick a random user agent:
+				randomagentnumber = random.randint(0,24)
+				source = gatherInfo.getSourceWithUserAgent(symbol, randomagentnumber)
+			elif randomUserAgent == False:
+				source = gatherInfo.getSource(symbol)
+				
+			#Gather the price based on the source:
+			price = gatherInfo.gatherPrice(source)
+			#append the info:
+			prices.append(price)
+			
+			#Check if the printed output option is active:
+			if printOUTPUT == True:
+				print(price)
+
+			#Sleep for the breakinterval time:
+			#Does not count the last time.sleep if the last iteration finished processing the last request.
+			if (iterations-1) != i:
+				time.sleep(breakInterval)
+		
+		#Return the values:
+		if returnTimeSpent == True and antiBan == True:
+			#Adds all of the spent time gathering the data together:
+			timeSpent = (iterations * breakInterval) + sum(randomDelays)
+			return prices, timeSpent
+		elif returnTimeSpent == True and antiBan == False:
+			timeSpent = (iterations * breakInterval)
+			return prices, timeSpent
+		else:
+			return prices
+
 	#Get the trend of the data data: returnChange is set to False. If set to true, the first value will be subtracted from the last to see the difference in change.
 	def getTrend(pricesList, returnChange = False):
 		Trend = ''
