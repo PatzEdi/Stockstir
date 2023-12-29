@@ -73,7 +73,7 @@ ____________________________________________________________________________
 - Please be aware that using a rotating IP address (for example a VPN with a rotating IP) could help you not get banned from the website CNBC when making a lot of requests. If you want to use the multi data gathering tool, you can use the anti ban function to try to avoid getting banned from the website and being recognized as a potential "bot" making automatic requests.
 - This project is still a work in progress. Adding new features is very easy, but so far I have started with it simple. 
 - Please note that the README file briefly goes into the details of how the project works. If you want more in depth details of what each and every function and parameter does, take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) file in the project files.
-- Also, I am not responsible for any innapropriate use of this library, such as spam and sending of mass requests.
+- Also, I am not responsible for any inapropriate use of this library, such as being used for spam or mass-collection purposes.
 ____________________________________________________________________________
 ## **Services used (Credits):**
 - [Requests module](https://requests.readthedocs.io/en/latest/)
