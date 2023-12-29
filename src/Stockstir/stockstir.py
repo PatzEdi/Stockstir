@@ -39,14 +39,11 @@ class gatherInfo:
 	
 	def gatherChangePercent(source):
 		# I want the change percentage
+		# I'm getting the regular change though
 		price = re.findall('(?<="priceChangePercent":")(.*)(?=","priceCurrency":")', source)
 		price = float(price[0].replace(",", ''))
 
-		# price may be UNCH, which just means the market isn't open right now.
-		if price == "UNCH":
-			return -1
-		else:
-			return price
+		return price
 
 	#Allows for the making of requests with a user agent. 
 	def getSourceWithUserAgent(stockSymbol, AgentPositionNumber):
@@ -204,9 +201,8 @@ class Tools:
 				randomDelays.append(randomdelay)
 				time.sleep(randomdelay)
 			
-			getSinglePrice	
 			#Gather the price based on the source:
-			price = getSinglePrice(stock)
+			price = Tools.getSinglePrice(stock)
 			#append the info:
 			prices.append(price)
 			
@@ -214,11 +210,6 @@ class Tools:
 			if printOUTPUT == True:
 				print(price)
 
-			#Sleep for the breakinterval time:
-			#Does not count the last time.sleep if the last iteration finished processing the last request.
-			if (iterations-1) != i:
-				time.sleep(breakInterval)
-		
 		#Return the values:
 		#No need to check antiban because sum([]) evaluates to 0
 		if returnTimeSpent == True:
@@ -247,20 +238,14 @@ class Tools:
 				randomDelays.append(randomdelay)
 				time.sleep(randomdelay)
 			
-			getSinglePrice	
 			#Gather the price based on the source:
-			price = getSinglePercentChange(stock)
+			price = Tools.getSinglePercentChange(stock)
 			#append the info:
 			prices.append(price)
 			
 			#Check if the printed output option is active:
 			if printOUTPUT == True:
 				print(price)
-
-			#Sleep for the breakinterval time:
-			#Does not count the last time.sleep if the last iteration finished processing the last request.
-			if (iterations-1) != i:
-				time.sleep(breakInterval)
 		
 		#Return the values:
 		#No need to check antiban because sum([]) evaluates to 0
