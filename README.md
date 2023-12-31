@@ -60,7 +60,7 @@ Since this library has many more features (too many to explain here in a neat wa
 - Very easy to use.
 - In case you accidentally put the wrong ticker/stock symbol as a parameter, an exception will occur and warns of the incorrect input.
 - Fast and efficient, no time to waste. Stockstir will save you time.
-- In terms of code... Comments are included to guide you through what the script does. The code is split into two classes: The Tools class and the gatherInfo class. The only ones you really need are under the Tools class, as the Tools class combines what is in the gatherInfo class to make a complete set of tools.
+- In terms of code... Comments are included to guide you through what the script does. The code is split into four classes: The Tools, Providers, API and the gatherInfo classes. The only ones you really need are under the Tools, Providers, and API classes, as those classes (especially Tools) combine what is in the gatherInfo class to make a complete set of tools.
 ____________________________________________________________________________
 ## **Why?**
 - Gathering stock data is definitely something that can be useful to many in their Python scripts. 
