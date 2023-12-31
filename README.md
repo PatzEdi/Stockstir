@@ -23,6 +23,8 @@ If you do not wish to be in the list above, please let me know by either creatin
 ## Important Note:
 If you would like to see the full changelog of V2 and new features, you can look at the [CHANGELOG.md](/CHANGELOG.md) file.
 
+**Also, regarding the providers of Update V2, I am currently reaching out to the the providers (such as CNN Business, Zacks, etc.) that have restrictions in using their services under their TOS, in order to verify the legality of the project in its current state, and to make sure that this project does not go against any of their copyright laws.**
+
 **Documentation:**
 Access the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html) to explore the features of Stockstir and how to use them, as well as getting to know how Stockstir works in a detailed way. The documentation is now updated to the latest version (V2).
 
