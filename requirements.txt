@@ -1,1 +1,5 @@
-sphinx-rtd-theme
+requests
+urllib
+re
+time
+random

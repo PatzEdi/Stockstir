@@ -4,8 +4,8 @@
 Installation
 *************
 
-To install Stockstir, you need to:
+To install Stockstir, you need to run the following command in your terminal:
 
 .. code-block:: console
 
-   $ pip install Stockstir
+   $ pip3 install Stockstir

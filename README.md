@@ -1,7 +1,7 @@
 # Stockstir
-Instantly and easily gather stock data in real time of any company in any of your python scripts
+Instantly and easily gather stock data in real time of any company in any of your Python scripts (V2)
 
-![stockstir-logo](https://user-images.githubusercontent.com/116693779/227736659-b39d549e-ccfd-4bef-851e-228f5bb6ac02.jpg)
+![stockstir-logo](/READMEassets/stockstirlogoV2.jpg)
 
 <p align="center">
 	<img src="https://img.shields.io/badge/License-MIT-brightgreen"
@@ -17,25 +17,25 @@ Instantly and easily gather stock data in real time of any company in any of you
 ## Thank you to the Starrers!
 [@rexzhang](https://github.com/rexzhang), [@arturo-zarzilla](https://github.com/arturo-zarzilla), [@dfd](https://github.com/dfd), [@ArcturusMajere](https://github.com/ArcturusMajere), [@LambertusDekker](https://github.com/LambertusDekker), [@508chris](https://github.com/508chris), [@PandaStacker](https://github.com/PandaStacker), [@piksu](https://github.com/piksu), [@cameronhptdev](https://github.com/cameronhptdev), [@bazfire](https://github.com/bazfire), [@AceofSpades5757](https://github.com/AceofSpades5757), [@georgettica](https://github.com/georgettica), [@LeonardPuettmann](https://github.com/LeonardPuettmann), [@Shrhawk](https://github.com/Shrhawk), [@builderjer](https://github.com/builderjer), [@mikudae](https://github.com/mikudae) 
 
-**Thank you for 10 Stars!**
+**Thank you for 15+ Stars!**
 If you do not wish to be in the list above, please let me know by either creating an issue or messaging me through reddit (linked on my website https://patzedi.github.io). Also, it may take me a while (depending on the time) to put new stargazers on the README, but it will be done nonetheless :)
 
-## **Important Note:**
+## Important Note:
+If you would like to see the full changelog of V2 and new features, you can look at the [CHANGELOG.md](/CHANGELOG.md) file.
 
-**Stockstir will receive an update soon, as many of you have requested new features and see Stockstir as a useful tool. Thank you!! Documentation will be updated as well**
+**Documentation:**
+Access the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html) to explore the features of Stockstir and how to use them, as well as getting to know how Stockstir works in a detailed way. The documentation is now updated to the latest version (V2).
 
-**The full documentation for this library is now hosted on readthedocs.org! [ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html) file under the project files. Take a look to explore the features of Stockstir and how to use them, as well as getting to know how Stockstir works in a detailed way.**
-
-## **Made with Python, made with passion: Stockstir is a way to gather stock data from any Python script in an easy and quick way.** 
+## **Stockstir V2 allows the instant gathering of any stock company value from any of your Python scripts, now with a new fail-safe system with more than one provider, and more features (some yet to come), enhancements, and fixes.** 
 ____________________________________________________________________________
-## **CHANGELOG: 1.0.3**
-- Added documentation to readthedocs.org. Now, the documentation is much easier to access and read through!
+## **CHANGELOG INFO**
+- The changelog for Stockstir starting from December 30, 2023, version 2.0.0 onward, will be stored in the [Changelog](/CHANGELOG.md) file under the project files.
 
-## **Usage**
+## **Quick Usage**
 
 Installation:
 ```
-pip install Stockstir
+pip3 install Stockstir
 ```
 
 Importing:
@@ -46,9 +46,10 @@ Simple example to gather stock data from any website:
 ```
 Stockstir.Tools.getSinglePrice("ticker/stockSymbol")
 ```
-Since this library has many more features (too many to explain here in a neat way), you can take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) file under the project files.
+Since this library has many more features (too many to explain here in a neat way), you can take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) hosted by readthedocs.io.
 
 ## **Features**
+- With V2, a new fail-safe system and new providers are implemented, as well as other features, enhancements, and fixes.
 - Instantly gather stock prices from any company in real time.
 - Includes a single price gathering tool to get the price of any company once.
 - Includes a multi data gathering tool which has features like anti ban, random user agents, delay for each request, and of course how much data to gather.  
