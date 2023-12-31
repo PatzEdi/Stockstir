@@ -1,7 +1,7 @@
 # Stockstir
 Instantly and easily gather stock data in real time of any company in any of your Python scripts (V2)
 
-![stockstir-logo](https://github.com/PatzEdi/Stockstir/blob/main/READMEassets/stockstirlogoV2.jpg)
+![stockstir-logo](https://github.com/PatzEdi/Stockstir/raw/main/READMEassets/stockstirlogoV2.jpg)
 
 <p align="center">
 	<img src="https://img.shields.io/badge/License-MIT-brightgreen"
