@@ -3,7 +3,7 @@ import src.Stockstir.stockstir as Stockstir
 import time
 import sys
 
-stocks = ["GME", "SPY", "MULN", "TTOO", "PBLA", "NKTX", "HUT", "FRGT", "SOXL"]
+stocks = ["GME", "SPY", "MULN", "TTOO", "PBLA", "NKTX", "HUT", "FRGT", "SOXL", "ADTX", "SNTG", "FLJ", "FSR", "BYND"]
 stock_tuples = []
 
 start_time = time.perf_counter()
@@ -20,3 +20,4 @@ for t in stock_tuples:
 	print(f'|{t[0]}\t{t[1]}\t{t[2]:.2f}%')
 
 elapsed_time = time.perf_counter() - start_time
+print(f'elapsed time: {elapsed_time:.2f} secs')
