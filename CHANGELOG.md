@@ -24,9 +24,11 @@ To check out the documentation, view the [Stockstir ReadtheDocs Documentation](h
 - Changed the request type. Now, requests using any of the three providers will be conducted with a User agent. This is because some providers (such as provider 3) don’t work without a valid user agent.
 - All functions that use getSource, getSourceWithUserAgent, and getPrice have a fail-system that is stored within the getSource and getSourceWithUserAgent functions. With this new fail-safe system, you can be confident in not losing any data if a provider fails, as it automatically switches to any of the other providers in the Providers.providers dictionary.
 - Documentation updated to latest version.
+
 **Fixes:**
 - Migrated the documentation to work with the newly implemented readthedocs configuration system.
 - Fixed pyproject.toml not having a specified requirements.txt file. Now, in case certain dependencies don’t exist on the machine, they will be installed automatically (e.g. requests). [#2](https://github.com/PatzEdi/Stockstir/issues/2)
+
 **Future Plans**
 - There are some plans to integrate a multiple Ticker symbol system, where the user puts more than one symbol at one per function call.
 - Add proxy support. Proxy support will have to be tested thoroughly before release, and it has not had sufficient testing yet.
