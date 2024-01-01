@@ -35,6 +35,7 @@ Providers Class Usage
 The **Providers** class stores the dictionary of providers that Stockstir uses to gather data. The dictionary is stored in the variable ``providers``.
 
 The dictionary looks like this:
+
 .. code-block:: python
 
     providers = {
