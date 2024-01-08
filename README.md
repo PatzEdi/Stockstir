@@ -15,17 +15,16 @@ Instantly and easily gather stock data in real time of any company in any of you
 </p>
 
 ## Thank you to the Starrers!
-[@hassan-surmount](https://github.com/hassan-surmount), [@DeflateAwning](https://github.com/DeflateAwning), [@ThinkCode](https://github.com/ThinkCode), [@stvnksslr](https://github.com/stvnksslr),[@rawberg](https://github.com/rawberg), [@z1001123](https://github.com/z1001123), [@soundtrackgeek](https://github.com/soundtrackgeek), [@Giddu](https://github.com/Giddu), [@T31M](https://github.com/T31M), [@somas1](https://github.com/somas1), [@rexzhang](https://github.com/rexzhang), [@arturo-zarzilla](https://github.com/arturo-zarzilla), [@dfd](https://github.com/dfd), [@ArcturusMajere](https://github.com/ArcturusMajere), [@LambertusDekker](https://github.com/LambertusDekker), [@508chris](https://github.com/508chris), [@PandaStacker](https://github.com/PandaStacker), [@piksu](https://github.com/piksu), [@cameronhptdev](https://github.com/cameronhptdev), [@bazfire](https://github.com/bazfire), [@AceofSpades5757](https://github.com/AceofSpades5757), [@georgettica](https://github.com/georgettica), [@LeonardPuettmann](https://github.com/LeonardPuettmann), [@Shrhawk](https://github.com/Shrhawk), [@builderjer](https://github.com/builderjer), [@mikudae](https://github.com/mikudae) 
+[@shunsock](https://github.com/shunsock), [@verystealthy](https://github.com/verystealthy), [@agarcialeon](https://github.com/agarcialeon), [@hassan-surmount](https://github.com/hassan-surmount), [@DeflateAwning](https://github.com/DeflateAwning), [@ThinkCode](https://github.com/ThinkCode), [@stvnksslr](https://github.com/stvnksslr),[@rawberg](https://github.com/rawberg), [@z1001123](https://github.com/z1001123), [@soundtrackgeek](https://github.com/soundtrackgeek), [@Giddu](https://github.com/Giddu), [@T31M](https://github.com/T31M), [@somas1](https://github.com/somas1), [@rexzhang](https://github.com/rexzhang), [@arturo-zarzilla](https://github.com/arturo-zarzilla), [@dfd](https://github.com/dfd), [@ArcturusMajere](https://github.com/ArcturusMajere), [@LambertusDekker](https://github.com/LambertusDekker), [@508chris](https://github.com/508chris), [@PandaStacker](https://github.com/PandaStacker), [@piksu](https://github.com/piksu), [@cameronhptdev](https://github.com/cameronhptdev), [@bazfire](https://github.com/bazfire), [@AceofSpades5757](https://github.com/AceofSpades5757), [@georgettica](https://github.com/georgettica), [@LeonardPuettmann](https://github.com/LeonardPuettmann), [@Shrhawk](https://github.com/Shrhawk), [@builderjer](https://github.com/builderjer), [@mikudae](https://github.com/mikudae)
 
-**Thank you for 25+ Stars!**
+**Thank you for 30+ Stars!**
 If you do not wish to be in the list above, please let me know by either creating an issue or messaging me through reddit (linked on my website https://patzedi.github.io). Also, it may take me a while (depending on the time) to put new stargazers on the README, but it will be done nonetheless :)
 
 ## Important Note:
 If you would like to see the full changelog of V2 and new features, you can look at the [CHANGELOG.md](/CHANGELOG.md) file.
 
-**Also, regarding the providers of Update V2, I am currently reaching out to the the providers (such as CNN Business, Zacks, etc.) that have restrictions in using their services under their TOS, in order to verify the legality of the project in its current state, and to make sure that this project does not go against any of their copyright laws.**
 
-**An update will be released soon to make Stockstir more 'Pythonic' and easy/better/more intuitive to use, as many have suggested. Stay tuned! Also, thanks again for the stars!!**
+**Stay tuned for the next update! Stockstir will be more 'Pythonic' and easy/better/more intuitive to use, as many have suggested. Also, thanks again for the stars!!**
 
 **Documentation:**
 Access the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html) to explore the features of Stockstir and how to use them, as well as getting to know how Stockstir works in a detailed way. The documentation is now updated to the latest version (V2).
