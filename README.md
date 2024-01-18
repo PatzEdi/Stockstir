@@ -21,6 +21,9 @@ Instantly and easily gather stock data in real time of any company in any of you
 If you do not wish to be in the list above, please let me know by either creating an issue or messaging me through reddit (linked on my website https://patzedi.github.io). Also, it may take me a while (depending on the time) to put new stargazers on the README, but it will be done nonetheless :)
 
 ## Important Note:
+
+**Apologies for the delay in updates! I promise, update is out very soon. The codebase is already completed, but the documentation is currently being worked on. The update is a farily large one with reformatting and restructuring of the entire code base. Stay tuned!**
+
 If you would like to see the full changelog of V2 and new features, you can look at the [CHANGELOG.md](/CHANGELOG.md) file.
 
 
