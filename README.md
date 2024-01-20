@@ -53,7 +53,9 @@ from stockstir import Stockstir
 ```
 Simple example to gather stock data from any website:
 ```
-Stockstir().tools.get_single_price("ticker/stockSymbol")
+price = Stockstir().tools.get_single_price("ticker/stockSymbol")
+
+print(price)
 ```
 Since this library has many more features (too many to explain here in a neat way), you can take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) hosted by readthedocs.io.
 
