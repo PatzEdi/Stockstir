@@ -32,9 +32,6 @@ As a reminder, if any errors are found in the documentation, codebase, etc. feel
 
 If you would like to see the full changelog of V2 and new features, you can look at the [CHANGELOG.md](/CHANGELOG.md) file.
 
-
-**Stay tuned for the next update! Stockstir will be more 'Pythonic' and easy/better/more intuitive to use, as many have suggested. Also, thanks again for the stars!!**
-
 **Documentation:**
 Access the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html) to explore the features of Stockstir and how to use them, as well as getting to know how Stockstir works in a detailed way. The documentation is now updated to the latest version (V2).
 
