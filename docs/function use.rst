@@ -316,7 +316,7 @@ You can use it like so:
 
 .. code-block:: python
 
-    keys, values = API.listCNBCData("stock_symbol") #Replace the stock_symbol with any other company, and make sure its in quotations.
+    keys, values = api.list_cnbc_data("stock_symbol") #Replace the stock_symbol with any other company, and make sure its in quotations.
     print(keys)
     print(values)
 
