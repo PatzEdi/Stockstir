@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "Stockstir"
-version = "2.0.3"
+version = "2.1.0"
 authors = [
 	{ name="PatzEdi", email="patzedigithub@gmail.com" }
 ]
@@ -17,6 +17,10 @@ classifiers = [
 		"License :: OSI Approved :: MIT License",
 		"Operating System :: OS Independent",
 ]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stockstir"]
 
 dependencies = [
   "requests"

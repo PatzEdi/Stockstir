@@ -1,5 +1,34 @@
 # StockStir V2 Changelog (Start Date: December 30, 2023 | Version Start Date: V.2)
 
+Check out the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).
+
+## CHANGELOG V2.1.0
+
+Stockstir V2.1.0 introduces a better way of using Stockstir, such as a new way of importing the Library, its classes, functions, and formatting changes from camelCase to snake_case, as well as additional functions. Please refer to the  for full instructions of each function found in the documentation linked above.
+
+1. Removed the gatherSourceWithUserAgent function. Now, the only function used to gather the source is getSource, which includes the randomUserAgent as an option.
+2. PEP Guidelines are now followed. For example, 1. Migrated all formatting from camelCase to snake_case for function names and variable names. 2. Migrated all formatting from camelCase to PascalCase for the class names. And more enhancmenets for improved readability.
+3. Migrated separate classes to separate files, so that functions can be accessed with for example:
+   ```
+   from stockstir import Stockstir
+
+   # Instantiate the Stockstir class object. With this new method, you can create different "gatherers" and can customize certain parameters such as the provider and random user agent.
+   stockstir = Stockstir()
+
+   # You can also instantiate the classes, using the same instance above.
+   tools = stockstir.tools
+   providers = stockstir.providers
+   ```
+4. Added a new function gather_multi_tickers(list: symbols, int: num_samples_per_symbol) which allows for a list of ticker symbols to be iterated through. Thank you [PandaStacker](https://github.com/PandaStacker) for this suggestion and pull request! It returns a list in the form of:
+   ```
+   {"Ticker1": [1,2,3,4,5], "Ticker2": [1,2,3,4,5]}
+
+   ```
+
+   So, the keys represent the stock/ticker symbols, and the values represent arrays of values (the amount is specified as a function parameter).
+5. Updated documentation to match current library use, using PEP Guidelines. Now, all methods and variables are snake_case. 
+6. By using this new instantiation structure, different data 'gatherers' can be instantiated, with different parameters, including changing the provider, enabling/disabling random_user_agent, and enabling/disabling print_output for certain functions. Refer to the function use section of the documentation to learn how to set those parameters for each Stockstir instantiation.
+
 
 ## CHANGELOG V2.0.0 (December 30, 2023):
 
@@ -8,11 +37,16 @@ Stockstir V2 Introduces many new features, improvements, and fixes to improve yo
 To check out the documentation, view the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html) hosted on readthedocs.io.
 
 **New Features:**
-- Added support for more than one source, which was CNBC. Now, you have CNBC, CNN, and Zacks. If one doesn’t work, you can manually change it with Sources.source_number = 0-2 (replace 0-2 with an actual number that is in between 0 and 2 e.g. 1). The default still remains 0, or in other words CNBC. You can also check which providers are working or not by running:
+- With the new PEP Guidelines following and new method of instantiating Stockstir, you can get the single price like so:
 
 	```
-    from Stockstir import Providers
-    Providers.runProviderChecks()
+   from stockstir import Stockstir
+   # Instantiate a stockstir object:
+   stockstir = Stockstir()
+   # Gather the price:
+   price = stockstir.tools.get_single_price("ticker/stockSymbol") # make sure to replace what is in between the quotations with the actual ticker symbol.
+   # Then, print the price:
+   print(price)
 	```
 
 - Using the new Providers.providers provider system, providers can easily be expanded upon. All that is needed is the URL of the provider, and the regex to find the price based on the source code of the URL. So far, three have been tested, and there are therefore three providers now instead of one, which was only CNBC. Please note that CNBC still remains the default provider, and to manually switch providers, please refer to the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).

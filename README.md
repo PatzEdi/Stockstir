@@ -18,11 +18,17 @@ Instantly and easily gather stock data in real time of any company in any of you
 [@fumbles](https://github.com/fumbles), [@shunsock](https://github.com/shunsock), [@verystealthy](https://github.com/verystealthy), [@agarcialeon](https://github.com/agarcialeon), [@hassan-surmount](https://github.com/hassan-surmount), [@DeflateAwning](https://github.com/DeflateAwning), [@ThinkCode](https://github.com/ThinkCode), [@stvnksslr](https://github.com/stvnksslr),[@rawberg](https://github.com/rawberg), [@z1001123](https://github.com/z1001123), [@soundtrackgeek](https://github.com/soundtrackgeek), [@Giddu](https://github.com/Giddu), [@T31M](https://github.com/T31M), [@somas1](https://github.com/somas1), [@rexzhang](https://github.com/rexzhang), [@arturo-zarzilla](https://github.com/arturo-zarzilla), [@dfd](https://github.com/dfd), [@ArcturusMajere](https://github.com/ArcturusMajere), [@LambertusDekker](https://github.com/LambertusDekker), [@508chris](https://github.com/508chris), [@PandaStacker](https://github.com/PandaStacker), [@piksu](https://github.com/piksu), [@cameronhptdev](https://github.com/cameronhptdev), [@bazfire](https://github.com/bazfire), [@AceofSpades5757](https://github.com/AceofSpades5757), [@georgettica](https://github.com/georgettica), [@LeonardPuettmann](https://github.com/LeonardPuettmann), [@Shrhawk](https://github.com/Shrhawk), [@builderjer](https://github.com/builderjer), [@mikudae](https://github.com/mikudae)
 
 **Thank you for 30+ Stars!**
-If you do not wish to be in the list above, please let me know by either creating an issue or messaging me through reddit (linked on my website https://patzedi.github.io). Also, it may take me a while (depending on the time) to put new stargazers on the README, but it will be done nonetheless :)
+If you do not wish to be in the list above, please let me know by either creating an issue or messaging me through reddit (linked on my website https://patzedi.github.io). Also, it may take me a while (depending on the time) to put new stargazers on the README, but it will be done nonetheless :) Also, if you are viewing on PyPi, this list above will most likely not be updated to the latest amount of starrers, as I would have to create a new release every time. Commits for new starrers will take place on the GitHub page.
 
 ## Important Note:
 
-**Apologies for the delay in updates! I promise, update is out very soon. The codebase is already completed, but the documentation is currently being worked on. The update is a farily large one with reformatting and restructuring of the entire code base. Stay tuned!**
+~~Apologies for the delay in updates! I promise, update is out very soon. The codebase is already completed, but the documentation is currently being worked on. The update is a farily large one with reformatting and restructuring of the entire code base. Stay tuned!~~
+
+Stockstir V2.1.0 is out! Refer to the changelog linked below where it says CHANGELOG INFO to view the latest changes, and view the documentation for the newly reworked codebase. 
+
+Some credits to this new update: [striata](https://www.reddit.com/user/striata/) for the suggestions on following PEP guidelines and code efficiency enhancements in [this post](https://www.reddit.com/r/Python/comments/18uuyjr/comment/kfnju1d/?utm_source=share&utm_medium=web2x&context=3), thank you! Also, [PandaStacker](https://github.com/PandaStacker), for taking the time to suggest new functions for Stockstir in [this pull request](https://github.com/PatzEdi/Stockstir/pull/3). Thanks for the contributions!
+
+As a reminder, if any errors are found in the documentation, codebase, etc. feel free to create an issue on the Github page. We are all here to learn and improve. Thanks!
 
 If you would like to see the full changelog of V2 and new features, you can look at the [CHANGELOG.md](/CHANGELOG.md) file.
 
@@ -46,16 +52,16 @@ pip3 install Stockstir
 
 Importing:
 ```
-import Stockstir
+from stockstir import Stockstir
 ```
 Simple example to gather stock data from any website:
 ```
-Stockstir.Tools.getSinglePrice("ticker/stockSymbol")
+Stockstir().tools.get_single_price("ticker/stockSymbol")
 ```
 Since this library has many more features (too many to explain here in a neat way), you can take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) hosted by readthedocs.io.
 
 ## **Features**
-- With V2, a new fail-safe system and new providers are implemented, as well as other features, enhancements, and fixes.
+- With V2, a new fail-safe system and new providers are implemented, as well as other features, enhancements, and fixes. PEP Guidelines are also followed now, which includes all methods written in snake_case rather than the old camelCase.
 - Instantly gather stock prices from any company in real time.
 - Includes a single price gathering tool to get the price of any company once.
 - Includes a multi data gathering tool which has features like anti ban, random user agents, delay for each request, and of course how much data to gather.  
@@ -80,7 +86,7 @@ ____________________________________________________________________________
 - Please be aware that using a rotating IP address (for example a VPN with a rotating IP) could help you not get banned from a provider when making a lot of requests. If you want to use the multi data gathering tool, you can use the anti ban function to try to avoid getting banned from the website and being recognized as a potential "bot" making automatic requests.
 - This project is still a work in progress. Adding new features is very easy, but so far I have started with it simple. 
 - Please note that the README file briefly goes into the details of how the project works. If you want more in depth details of what each and every function and parameter does, take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) file in the project files.
-- Also, I am not responsible for any inappropriate use of this library, such as being used for spam or mass-collection purposes. This project is for educational purposes only.
+- Also, I am not responsible for any inappropriate use of this library, such as being used for spam or mass-collection purposes. This project is strictly for educational purposes only.
 ____________________________________________________________________________
 ## **Services used (Credits):**
 - [Requests module](https://requests.readthedocs.io/en/latest/)
