@@ -57,6 +57,25 @@ price = Stockstir().tools.get_single_price("ticker/stockSymbol")
 
 print(price)
 ```
+
+New Stockstir object instantiation method (V2.1.0):
+
+```
+stockstir = Stockstir()
+# Below, as an example, we can instantiate the classes within the Stockstir object, which is in this case called stockstir.
+tools = stockstir.tools
+providers = stockstir.providers
+api = stockstir.api
+```
+
+You can also customize certain aspects of each Stockstir object you insantiate (V2.1.0):
+```
+stockstir = Stockstir(provider = 'cnbc', random_user_agent=True, print_output = True) # default provider = 'cnbc' (can be set to 'cnn' or 'zacks' as well (cnbc recommended)), random_user_agent defaults to False, print_output defaults to False. (Note: print_output is only used for certain funcs such as multi_data_gathering)
+# Below, as an example, we can instantiate the classes within the Stockstir object, which is in this case called stockstir.
+tools = stockstir.tools
+providers = stockstir.providers
+api = stockstir.api
+```
 Since this library has many more features (too many to explain here in a neat way), you can take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) hosted by readthedocs.io.
 
 ## **Features**
