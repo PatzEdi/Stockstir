@@ -9,3 +9,4 @@ tests/pyproject.toml
 tests/README.md
 tests/testing.py
 tests/uninstall.sh
+tests/testing.py
