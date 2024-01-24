@@ -1,2 +1,11 @@
 
 .DS_Store
+src/stockstir/__pycache__/__init__.cpython-311.pyc
+src/stockstir/__pycache__/api.cpython-311.pyc
+src/stockstir/__pycache__/gather_info.cpython-311.pyc
+src/stockstir/__pycache__/providers.cpython-311.pyc
+src/stockstir/__pycache__/tools.cpython-311.pyc
+tests/pyproject.toml
+tests/README.md
+tests/testing.py
+tests/uninstall.sh
