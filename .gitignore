@@ -10,3 +10,4 @@ tests/README.md
 tests/testing.py
 tests/uninstall.sh
 tests/testing.py
+tests/ntfy_script.py
