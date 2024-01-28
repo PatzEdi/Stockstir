@@ -31,6 +31,8 @@ If you do not wish to be in the list above, please let me know by either creatin
 
 ## Important Note:
 
+**Automatic provider integrity/validity checks have now been implemented on my side through crontab! Checks run 5 times a day, and a notification is sent to my phone and desktop to notify me of the status. This way, if any provider fails, I will be notified much sooner than before**
+
 ~~Apologies for the delay in updates! I promise, update is out very soon. The codebase is already completed, but the documentation is currently being worked on. The update is a farily large one with reformatting and restructuring of the entire code base. Stay tuned!~~
 
 Stockstir V2.1.0 is out! Refer to the changelog linked below where it says CHANGELOG INFO to view the latest changes, and view the documentation for the newly reworked codebase. 
