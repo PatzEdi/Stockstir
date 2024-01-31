@@ -31,11 +31,7 @@ If you do not wish to be in the list above, please let me know by either creatin
 
 ## Important Note:
 
-**CNN Provider has failed. I have tried fixing it, but, they have changed their method of displaying info. However, I have thankfully been working on a solution, and I decided to replace CNN with a new provider. I will test out the new provider before releasing the next version. Thanks to the automated checks, I was notified about the failure! For now, use cnbc or zacks as the providers.**
-
 **Automatic provider integrity/validity checks have now been implemented on my side through crontab! Checks run 5 times a day, and a notification is sent to my phone and desktop to notify me of the status. This way, if any provider fails, I will be notified much sooner than before**
-
-~~Apologies for the delay in updates! I promise, update is out very soon. The codebase is already completed, but the documentation is currently being worked on. The update is a farily large one with reformatting and restructuring of the entire code base. Stay tuned!~~
 
 Stockstir V2.1.0 is out! Refer to the changelog linked below where it says CHANGELOG INFO to view the latest changes, and view the documentation for the newly reworked codebase. 
 
@@ -51,6 +47,7 @@ Access the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.i
 ## **Stockstir V2 allows the instant gathering of any stock company value from any of your Python scripts, now with a new fail-safe system with more than one provider, and more features (some yet to come), enhancements, and fixes.** 
 ____________________________________________________________________________
 ## **CHANGELOG INFO**
+- Latest Version: 2.1.1
 - The changelog for Stockstir starting from December 30, 2023, version 2.0.0 onward, will be stored in the [Changelog](/CHANGELOG.md) file under the project files.
 
 ## **Quick Usage**
@@ -83,7 +80,7 @@ api = stockstir.api
 
 You can also customize certain aspects of each Stockstir object you instantiate (V2.1.0):
 ```
-stockstir = Stockstir(provider = 'cnbc', random_user_agent=True, print_output = True) # default provider = 'cnbc' (can be set to 'cnn' or 'zacks' as well (cnbc recommended)), random_user_agent defaults to False, print_output defaults to False. (Note: print_output is only used for certain funcs such as multi_data_gathering)
+stockstir = Stockstir(provider = 'cnbc', random_user_agent=True, print_output = True) # default provider = 'cnbc' (can be set to 'insider' or 'zacks' as well (cnbc recommended)), random_user_agent defaults to False, print_output defaults to False. (Note: print_output is only used for certain funcs such as multi_data_gathering)
 # Below, as an example, we can instantiate the classes within the Stockstir object, which is in this case called stockstir.
 tools = stockstir.tools
 providers = stockstir.providers

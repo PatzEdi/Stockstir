@@ -35,7 +35,7 @@ By using this method of instantiation, different Stockstir objects, or 'gatherer
 
     This is important. As can be seen, the Stockstir class can take in parameters, which are as follows:
     
-    provider - This can be either set to "cnbc", "cnn", or "zacks". This is the provider that the Stockstir object will use to gather data (default = "cnbc"). The provider is no longer set by using the provider_number variable in the Providers class, but rather by using this parameter.
+    provider - This can be either set to "cnbc", "insider", or "zacks" (You can use the ``list_available_providers`` function to list the providers you can use (explained below)). This is the provider that the Stockstir object will use to gather data (default = "cnbc"). The provider is no longer set by using the provider_number variable in the Providers class, but rather by using this parameter.
     random_user_agent - This can be either set to True or False. This will randomize the user agent for each request. Please note that this only takes effect in all classes other than API (default = False)
     print_output - This can be either set to True or False. This will print the output of each request and general info in the ``multi_data_gathering`` and ``multi_ticker_data_gathering methods``. (default = False)
 
@@ -90,7 +90,7 @@ The dictionary looks like this:
 
     providers = {
 		"https://www.cnbc.com/quotes/": '(?<="price":")(.*)(?=","priceChange":")',
-		"https://money.cnn.com/quote/quote.html?symb=": 'BatsUS">(.*?)</span>',
+		"https://markets.businessinsider.com/stocks/": '"currentValue":(.*?),"previousClose":',
 		"https://www.zacks.com/stock/quote/": 'last_price">\$(.*?)<span>',
 	}
 As you can see, the dictionary contains the URL of the provider as the key, and the regex pattern as the value. The regex pattern is used to find the price of the stock in the HTML of the website.
@@ -98,9 +98,9 @@ As you can see, the dictionary contains the URL of the provider as the key, and 
 The class itself also contains a ``provider_number`` variable, which can be set when you instantiate a stockstir object like so:
 
 .. code-block:: python
-    stockstir = Stockstir(provider = 'cnn') # Here, we set the provider to CNN, which is the second provider in the dictionary (in this case, the first provider is CNBC, the second is CNN, and the third is Zacks)
+    stockstir = Stockstir(provider = 'insider') # Here, we set the provider to Business Insiders, which is the second provider in the dictionary (in this case, the first provider is CNBC, the second is Business Insiders, and the third is Zacks)
 
-You can also switch the providers. The default is 'cnbc', but for CNN if it 'cnn', and Zacks it is 'zacks'. Based on the one picked, the provider_number variable will be set to the index of the provider in the dictionary.
+You can also switch the providers. The default is 'cnbc', but for Business Insiders it is 'insider', and Zacks it is 'zacks'. Based on the one picked, the provider_number variable will be set to the index of the provider in the dictionary.
 
 The Providers class has two functions which you can use, but one in particular which is of use:
 
@@ -125,6 +125,20 @@ Another function that the Providers class has:
 This function is mostly used by the program itself, but it can be used by you if you want to test a specific provider, which in this case is the one set to the variable Providers.provider_number.
 
 This function will return a boolean value of True if the provider is working properly, and False if it is not.
+
+``list_available_providers`` function:
+
+This function is used to list the available providers that you can use. It prints out a display panel (if print_output is set to True) of the available providers, and returns a boolean (True if working, False if not working).
+
+As stated before, you can set print_output either in the class instance or in the function call. So, if print_output is set to True, the output of this function will look something like this:
+
+.. code-block:: python
+
+    0: cnbc (WORKING)
+    1: insider (WORKING)
+    2: zacks (WORKING)
+
+The function also returns a True of False statement, depending on whether or not all the providers are working properly.
 
 Tools Class Usage
 -----------------

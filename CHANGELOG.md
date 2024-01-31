@@ -2,6 +2,29 @@
 
 Check out the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).
 
+## CHANGELOG V2.1.1:
+
+1. CNN Provider had failed. Thankfully, due to the implementation of automated checks checking whether or not the Providers are working properly, I was able to catch the issue soon. So, the CNN Provider has now been switched with a new provider, **business insiders** (cnbc still remains the defaut provider). To use this new provider, you can choose "insider" as your provider upon Stockstir class instantiation, like so:
+
+```
+   from stockstir import Stockstir
+
+   stockstir = Stockstir("insider") # Select insider as you provider
+```
+2. Added function in Providers class that lists out all providers with their respective names that you can use to use them. This way, you know which ones you can use, as you are given their names. It also tests each provider and tells which ones are available and which ones are working. The function can be used like so, with its name being list_available_providers:
+
+```
+   stockstir = Stockstir(print_output=True) # Make sure the print_output is set to True, so that the function actually prints out the panel instead of just returning a boolean value.
+   stockstir.providers.list_available_providers() # You can also set print_output equal to True within the function itself, in case you need to override the Stockstir instance print_output.
+```
+The output will be something like this (make sure print_output is set to true, either from the function call itself or from the class instance):
+
+```
+0: cnbc (WORKING)
+1: insider (WORKING)
+2: zacks (WORKING)
+```
+This new function can also be seen as a less in depth version of the run_provider_checks method to quickly see which providers are working and which ones aren't. Keep in mind, that the function
 ## CHANGELOG V2.1.0
 
 Stockstir V2.1.0 introduces a better way of using Stockstir, such as a new way of importing the Library, its classes, functions, and formatting changes from camelCase to snake_case, as well as additional functions. Please refer to the  for full instructions of each function found in the documentation linked above.

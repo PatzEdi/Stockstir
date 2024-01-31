@@ -3,23 +3,23 @@ from urllib.request import Request, urlopen
 
 class Providers:
 	# These two functions are solely used for the __init__.py file.
-	def __init__(self, provider_name="cnbc"):
+	def __init__(self, provider_name, print_output):
 		if provider_name == "cnbc":
 			self.provider_number = 0
-		elif provider_name == "cnn":
+		elif provider_name == "insider":
 			self.provider_number = 1
 		elif provider_name == "zacks":
 			self.provider_number = 2
 		else:
 			print("Invalid provider name. Using default provider (cnbc)")
 			self.provider_number = 0
-
+		self.print_output = print_output # Set the print_output variable to the print_output variable that was passed in.
 	def set_gather_info(self, gather_info):
 		self.gather_info = gather_info
 
 	providers = {
 		"https://www.cnbc.com/quotes/": '(?<="price":")(.*)(?=","priceChange":")',
-		"https://money.cnn.com/quote/quote.html?symb=": 'BatsUS">(.*?)</span>',
+		"https://markets.businessinsider.com/stocks/": '"currentValue":(.*?),"previousClose":',
 		"https://www.zacks.com/stock/quote/": 'last_price">\$(.*?)<span>',
 	}
 
@@ -75,3 +75,22 @@ class Providers:
 		except:
 			is_passing = False
 		return is_passing
+	# Lists all providers so that: their names that can be used to set the provider_number, and shows which ones are working and which ones are not.
+	def list_available_providers(self, print_output=None):
+		if print_output == None:
+			print_output = self.print_output
+		temp_provider_number = self.provider_number
+		display_panel = ""
+		providers = ["0: cnbc", "1: insider", "2: zacks"]
+		is_passing = True
+		for i in range(len(providers)):
+			self.provider_number = i
+			if self.test_selected_provider():
+				display_panel += providers[i] + " (WORKING)\n"
+			else:
+				display_panel += providers[i] + " (NOT WORKING)\n"
+				is_passing = False
+		self.provider_number = temp_provider_number
+		if print_output:
+			print(display_panel) # Print the display panel which showcases the working and non-working providers, but only if print_output is enabled.
+		return is_passing # return the boolean value that shows if all providers are working or not (True=working, False=not working)

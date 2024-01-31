@@ -33,6 +33,10 @@ The ``test_selected_provider`` Function:
 
 This function is used to test the selected provider (set by Providers.provider_number). It checks for both the integrity of the request and the regex.
 
+The ``list_available_providers`` Function:
+
+This function is similar to the run_provider_checks function. However, it does not go into the details of what is working and what is not about a provider. Rather, it lists out the available providers to use, and those that are working.
+
 The GatherInfo class
 --------------------
 The **GatherInfo** class consists of two main functions: one to gather the source code of a web page and one to return the price based on the source code. These two functions are **get_source** and **gather_price**.

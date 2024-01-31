@@ -6,7 +6,7 @@ from .api import API
 
 class Stockstir():
     def __init__(self, provider = "cnbc", random_user_agent = False, print_output = False):
-        self.providers = Providers(provider)
+        self.providers = Providers(provider, print_output)
         self.gatherinfo = GatherInfo()
         self.tools = Tools(random_user_agent, print_output)
         self.api = API()
