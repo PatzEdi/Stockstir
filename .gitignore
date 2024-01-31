@@ -12,3 +12,4 @@ tests/uninstall.sh
 tests/testing.py
 tests/ntfy_script.py
 tests/src/stockstir/logfile.txt
+log.txt

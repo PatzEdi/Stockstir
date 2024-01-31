@@ -31,6 +31,8 @@ If you do not wish to be in the list above, please let me know by either creatin
 
 ## Important Note:
 
+**CNN Provider is currently not working, as CNN has made changes on their end. Unfortunately, I have tried fixing it, but they seem to be using a javascript approach (which leads to the information in the divs within the HTML to be blank). So, CNN will most likely be replaced soon with another provider if possible, and the documentation will be updated then. Sorry for the inconvenience. For now, you can use cnbc or zacks as providers.**
+
 **Automatic provider integrity/validity checks have now been implemented on my side through crontab! Checks run 5 times a day, and a notification is sent to my phone and desktop to notify me of the status. This way, if any provider fails, I will be notified much sooner than before**
 
 ~~Apologies for the delay in updates! I promise, update is out very soon. The codebase is already completed, but the documentation is currently being worked on. The update is a farily large one with reformatting and restructuring of the entire code base. Stay tuned!~~
