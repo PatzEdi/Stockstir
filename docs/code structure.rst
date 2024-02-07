@@ -124,7 +124,7 @@ The function works by instantiating a failed_providers list at the start. Then, 
 
 In the try: block, a request is made in an attempt to gather the source. If that fails, it goes down to the except: block. In the except block, the failed provider number Providers.provider_number is put into the failed_providers list.
 
-Once put into the list, a new provider is chosen through a while loop which generates a random number 0 through the legnth of the ficitonary minus 1, until the generated number is no longer in the failed_providers list. Once that is done, the provider number is set to the new provider number, and the while True: loop is run again.
+Once put into the list, a new provider is chosen through a while loop which generates a random number 0 through the length of the dicitonary minus 1, until the generated number is no longer in the failed_providers list. Once that is done, the provider number is set to the new provider number, and the while True: loop is run again.
 
 Using this fail-safe method in the ``get_source`` function, there is no need to implement the fail-safe mechanism in other parts of the code, which means that functions such as ``multi_data_gathering`` and ``get_single_price`` remain untouched from the previous version of Stockstir.
 
