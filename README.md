@@ -31,7 +31,7 @@ If you do not wish to be in the list above, please let me know by either creatin
 
 ## Important Note:
 
-**Unfortunately, there is an issue on my system where the .gitignore file gets deleted randomly. Until this is fixed, there may be an anomly in the git files or hopefully it is rather something to do with my IDE. Because of this, commits regarding the gitignore may be posted in an attempt to fix the issue, and updates will be suspended as of now. Sorry, will try to fix it ASAP!**
+To those that saw the commits on the .gitignore issue: it has been fixed!
 
 *Verified commits are now being used (Verified commits are used to make sure you know the real developer/trusted person is comitting to the branch/project)*
 
