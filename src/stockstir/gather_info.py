@@ -72,7 +72,7 @@ class GatherInfo:
 							self.providers.provider_number = random.randint(0, len(self.providers.providers) - 1)
 						else:
 							raise Exception(
-								f"\nAll providers seemed to have failed while trying to make a request. Please create an issue if persistent. Try to use API.getPriceCNBCAPI('{stock_symbol}') instead."
+								f"\nAll providers seemed to have failed while trying to make a request. Please create an issue if persistent. Try to use get_price_cnbc_api('{stock_symbol}') found in the API class instead."
 							)
 				else:
 					raise Exception(f"ERR: Could not find symbol/company through source {self.providers.provider_number}'s indexes.")

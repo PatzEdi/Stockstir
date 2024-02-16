@@ -2,6 +2,11 @@
 
 Check out the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).
 
+## CHANGELOG V2.1.2:
+This is just a hot fix. Under the get_source function found in the gather_info class, if all provideres failed, the API.getPriceCNBCAPI was used instead of the new code base formatting intoduced in V2.1. This has now been fixed. A small error on my part, yet big enough to be misleading. Sorry about that!
+
+Also added build instructions in the README for those of you who want to build Stockstir directly from your local machine (without having to install via pypi).
+
 ## CHANGELOG V2.1.1:
 
 1. CNN Provider had failed. Thankfully, due to the implementation of automated checks checking whether or not the Providers are working properly, I was able to catch the issue soon. So, the CNN Provider has now been switched with a new provider, **business insiders** (cnbc still remains the defaut provider). To use this new provider, you can choose "insider" as your provider upon Stockstir class instantiation, like so:

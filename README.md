@@ -26,7 +26,7 @@ Instantly and easily gather stock data in real time of any company in any of you
 ## Thank you to the Starrers!
 [@JamesSullivan](https://github.com/JamesSullivan), [@mptsolutions](https://github.com/mptsolutions), [@FrankD412](https://github.com/FrankD412), [@fumbles](https://github.com/fumbles), [@shunsock](https://github.com/shunsock), [@verystealthy](https://github.com/verystealthy), [@agarcialeon](https://github.com/agarcialeon), [@hassan-surmount](https://github.com/hassan-surmount), [@DeflateAwning](https://github.com/DeflateAwning), [@ThinkCode](https://github.com/ThinkCode), [@stvnksslr](https://github.com/stvnksslr),[@rawberg](https://github.com/rawberg), [@z1001123](https://github.com/z1001123), [@soundtrackgeek](https://github.com/soundtrackgeek), [@Giddu](https://github.com/Giddu), [@T31M](https://github.com/T31M), [@somas1](https://github.com/somas1), [@rexzhang](https://github.com/rexzhang), [@arturo-zarzilla](https://github.com/arturo-zarzilla), [@dfd](https://github.com/dfd), [@ArcturusMajere](https://github.com/ArcturusMajere), [@LambertusDekker](https://github.com/LambertusDekker), [@508chris](https://github.com/508chris), [@PandaStacker](https://github.com/PandaStacker), [@piksu](https://github.com/piksu), [@cameronhptdev](https://github.com/cameronhptdev), [@bazfire](https://github.com/bazfire), [@AceofSpades5757](https://github.com/AceofSpades5757), [@georgettica](https://github.com/georgettica), [@LeonardPuettmann](https://github.com/LeonardPuettmann), [@Shrhawk](https://github.com/Shrhawk), [@builderjer](https://github.com/builderjer), [@mikudae](https://github.com/mikudae)
 
-**Thank you for 35+ Stars!**
+**Thank you for 35+ Stars! Thank you for 10K+ Downloads!**
 If you do not wish to be in the list above, please let me know by either creating an issue or messaging me through reddit (linked on my website https://patzedi.github.io). Also, it may take me a while (depending on the time) to put new stargazers on the README, but it will be done nonetheless :) Also, if you are viewing on PyPi, this list above will most likely not be updated to the latest amount of starrers, as I would have to create a new release every time. Commits for new starrers will take place on the GitHub page.
 
 ## Important Note:
@@ -51,7 +51,7 @@ Access the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.i
 ## **Stockstir V2 allows the instant gathering of any stock company value from any of your Python scripts, now with a new fail-safe system with more than one provider, and more features (some yet to come), enhancements, and fixes.** 
 ____________________________________________________________________________
 ## **CHANGELOG INFO**
-- Latest Version: 2.1.1
+- Latest Version: 2.1.2
 - The changelog for Stockstir starting from December 30, 2023, version 2.0.0 onward, will be stored in the [Changelog](/CHANGELOG.md) file under the project files.
 
 ## **Quick Usage**
@@ -119,6 +119,22 @@ ____________________________________________________________________________
 - This project is still a work in progress. Adding new features is very easy, but so far I have started with it simple. 
 - Please note that the README file briefly goes into the details of how the project works. If you want more in depth details of what each and every function and parameter does, take a look at the [Documentation](https://stockstir.readthedocs.io/en/latest/index.html) file in the project files.
 - Also, I am not responsible for any inappropriate use of this library, such as being used for spam or mass-collection purposes. This project is strictly for educational purposes only.
+____________________________________________________________________________
+## **Build Instructions**
+To build Stockstir directly onto your local machine without installing from pypi, you can follow these steps below:
+1. Clone the repository:
+```
+git clone https://github.com/PatzEdi/Stockstir
+```
+2. Enter the project files directory (assuming you are in the same directory as when you cloned Stockstir):
+```
+cd Stockstir
+```
+3. Build and install Stockstir via pip3:
+```
+pip3 install -e .
+```
+4. Done! Stockstir is now installed on your local machine.
 ____________________________________________________________________________
 ## **Services used (Credits):**
 - [Requests module](https://requests.readthedocs.io/en/latest/)

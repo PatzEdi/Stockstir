@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "Stockstir"
-version = "2.1.1"
+version = "2.1.2"
 authors = [
 	{ name="PatzEdi", email="patzedigithub@gmail.com" }
 ]
