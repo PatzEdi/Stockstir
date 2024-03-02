@@ -51,7 +51,7 @@ Access the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.i
 ## **Stockstir V2 allows the instant gathering of any stock company value from any of your Python scripts, now with a new fail-safe system with more than one provider, and more features (some yet to come), enhancements, and fixes.** 
 ____________________________________________________________________________
 ## **CHANGELOG INFO**
-- Latest Version: 2.1.2
+- Latest Version: 2.1.3
 - The changelog for Stockstir starting from December 30, 2023, version 2.0.0 onward, will be stored in the [Changelog](/CHANGELOG.md) file under the project files.
 
 ## **Quick Usage**
