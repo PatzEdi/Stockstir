@@ -3,7 +3,7 @@
 Check out the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).
 
 ## CHANGELOG V2.1.3:
-Fix dependency issue (Should be fixed. If you have further issues with dependency installs (such as requests) on a fresh Stockstir install, pleace create an issue.)
+Fix dependency issue (Should be fixed. If you have further issues with dependency installs (such as requests) on a fresh Stockstir install, please create an issue.)
 ## CHANGELOG V2.1.2:
 This is just a hot fix. Under the get_source function found in the gather_info class, if all provideres failed, the API.getPriceCNBCAPI was used instead of the new code base formatting intoduced in V2.1. This has now been fixed. A small error on my part, yet big enough to be misleading. Sorry about that!
 
