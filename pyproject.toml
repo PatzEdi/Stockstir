@@ -18,13 +18,12 @@ classifiers = [
 		"Operating System :: OS Independent",
 ]
 
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/stockstir"]
-
 dependencies = [
   "requests"
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stockstir"]
 
 [project.urls]
 "Homepage" = "https://github.com/PatzEdi"
