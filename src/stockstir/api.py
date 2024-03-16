@@ -34,5 +34,5 @@ class API:
 	# Get a single price using the CNBC 'API'
 	def get_price_cnbc_api(self, stock_symbol):
 		data = self.get_cnbc_api_json_data(stock_symbol)
-		price = data['FormattedQuoteResult']['FormattedQuote'][0]['last']
+		price = float(data['FormattedQuoteResult']['FormattedQuote'][0]['last'])
 		return price

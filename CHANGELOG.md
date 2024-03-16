@@ -2,6 +2,10 @@
 
 Check out the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).
 
+## ## CHANGELOG V2.1.4:
+1. Fixed the get_price_cnbc_api method return value. Before, it returned a string. Now, it returns a float.
+2. Fixed a typo in the changelog. (If any other typos are spotted, feel free to create an issue. Thanks!)
+3. Note: Proxy support may be added soon.
 ## CHANGELOG V2.1.3:
 Fix dependency issue (Should be fixed. If you have further issues with dependency installs (such as requests) on a fresh Stockstir install, please create an issue.)
 ## CHANGELOG V2.1.2:
@@ -31,7 +35,7 @@ The output will be something like this (make sure print_output is set to true, e
 1: insider (WORKING)
 2: zacks (WORKING)
 ```
-This new function can also be seen as a less in depth version of the run_provider_checks method to quickly see which providers are working and which ones aren't. Keep in mind, that the function
+This new function can also be seen as a less in depth version of the run_provider_checks method to quickly see which providers are working and which ones aren't. Keep in mind, that the function will return a boolean (True=all providers working, False=all/some providers are not working).
 ## CHANGELOG V2.1.0
 
 Stockstir V2.1.0 introduces a better way of using Stockstir, such as a new way of importing the Library, its classes, functions, and formatting changes from camelCase to snake_case, as well as additional functions. Please refer to the  for full instructions of each function found in the documentation linked above.
