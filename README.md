@@ -65,7 +65,7 @@ Importing:
 ```
 from stockstir import Stockstir
 ```
-Simple example to gather stock data from any website:
+Simple example to gather stock data from any script:
 ```
 price = Stockstir().tools.get_single_price("ticker/stockSymbol")
 
