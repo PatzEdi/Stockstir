@@ -17,7 +17,7 @@ If you want to import the full library:
 
     from stockstir import Stockstir
 
-With the latest release of Stockstir V2, you can now instantiate the library with different parameters, making the process slightly different from before:
+You can now instantiate the library as an object with different parameters. 
 
 .. code-block:: python
 

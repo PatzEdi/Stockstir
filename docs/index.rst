@@ -1,12 +1,12 @@
-Welcome to the official Stockstir (V2) Library documentation!
+Welcome to the official Stockstir Library documentation!
 =============================================================
 
 **Stockstir**
 
-Instantly and easily gather stock data in real time of any company in any of your python scripts (V2 is out!)
+Instantly and easily gather stock data in real time of any company in any of your python scripts
 
 
-.. image:: img/stockstirlogoV2.jpg
+.. image:: img/stockstir_logo.png
 
 .. raw:: html
 

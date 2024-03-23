@@ -2,7 +2,14 @@
 
 Check out the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).
 
-## ## CHANGELOG V2.1.4:
+## CHANGELOG V2.1.5:
+1. Contructed a cleaner README for better reading and understanding of Stockstir.
+2. Removed most of the "Stockstir V2" text about certain features being new.
+3. Improved certain parts of the code as to make Stockstir more modular and less of a hassle to add features (and providers) to.
+4. Removed "old" folder from main branch (not necessary)
+5. Removed READMEassets folder from main branch. README.md file now uses the Stockstir logo from the /docs/img/ project files path.
+6. Changed the Stockstir Logo as to not include V2 anymore.
+## CHANGELOG V2.1.4:
 1. Fixed the get_price_cnbc_api method return value. Before, it returned a string. Now, it returns a float.
 2. Fixed a typo in the changelog. (If any other typos are spotted, feel free to create an issue. Thanks!)
 3. Note: Proxy support may be added soon.

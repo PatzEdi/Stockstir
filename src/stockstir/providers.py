@@ -4,16 +4,20 @@ from urllib.request import Request, urlopen
 class Providers:
 	# These two functions are solely used for the __init__.py file.
 	def __init__(self, provider_name, print_output):
-		if provider_name == "cnbc":
-			self.provider_number = 0
-		elif provider_name == "insider":
-			self.provider_number = 1
-		elif provider_name == "zacks":
-			self.provider_number = 2
-		else:
+		is_valid_provider = False
+		# Choose the provider based on the provider_name that was passed in.
+		for i, provider in enumerate(list(self.providers.keys())):
+			if provider_name in provider:
+				self.provider_number = i
+				is_valid_provider = True
+				break
+
+		if not is_valid_provider:
 			print("Invalid provider name. Using default provider (cnbc)")
 			self.provider_number = 0
+
 		self.print_output = print_output # Set the print_output variable to the print_output variable that was passed in.
+
 	def set_gather_info(self, gather_info):
 		self.gather_info = gather_info
 
@@ -23,7 +27,6 @@ class Providers:
 		"https://www.zacks.com/stock/quote/": 'last_price">\$(.*?)<span>',
 	}
 
-	provider_number = 0
 	# This is the main function to check and see if each provider is working, and if not, it will print out a message saying which provider is not working.
 	def run_provider_checks(self, test_ticker_symbol="AMZN", exit_on_failure=True):
 		temp_provider_number = self.provider_number
