@@ -3,7 +3,7 @@
 Check out the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).
 
 ## CHANGELOG V2.1.5:
-1. Contructed a cleaner README for better reading and understanding of Stockstir.
+1. Constructed a cleaner README for better reading and understanding of Stockstir.
 2. Removed most of the "Stockstir V2" text about certain features being new.
 3. Improved certain parts of the code as to make Stockstir more modular and less of a hassle to add features (and providers) to.
 4. Removed "old" folder from main branch (not necessary)
