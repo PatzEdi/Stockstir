@@ -8,7 +8,7 @@ version = "2.1.5"
 authors = [
 	{ name="PatzEdi", email="patzedigithub@gmail.com" }
 ]
-description = "Instantly and easily gather stock data in real time of any company in any of your Python scripts (V2)"
+description = "Easily gather stock data of any company in any of your Python projects"
 readme = "README.md"
 keywords = ["stocks", "stockmanagement", "stockdata", "stockmarkettool"]
 requires-python = ">=3.9"
