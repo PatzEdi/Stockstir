@@ -23,13 +23,11 @@ class API:
 		r = requests.get(cnbc_api_url)
 		data = r.json()
 		if data['FormattedQuoteResult']['FormattedQuote'][0]['code'] == 1:
-			raise Exception(f"Could not find the {stock_symbol}. Please check the stock symbol.")
+			raise Exception(f"Could not find '{stock_symbol}'. Please check the stock symbol.")
 		return data
 	
 	def list_cnbc_data(self, stock_symbol):
 		data = self.get_cnbc_api_json_data(stock_symbol)
-		if data['FormattedQuoteResult']['FormattedQuote'][0]['code'] == 1:
-			raise Exception(f"Could not find the {stock_symbol}. Please check the stock symbol.")
 		formatted_dictionary_data = data['FormattedQuoteResult']['FormattedQuote'][0]
 		keys = list(formatted_dictionary_data.keys())
 		values = list(formatted_dictionary_data.values())
@@ -40,7 +38,5 @@ class API:
 	# Get a single price using the CNBC 'API'
 	def get_price_cnbc_api(self, stock_symbol):
 		data = self.get_cnbc_api_json_data(stock_symbol)
-		if data['FormattedQuoteResult']['FormattedQuote'][0]['code'] == 1:
-			raise Exception(f"Could not find the {stock_symbol} price in the JSON data. Please check the stock symbol.")
 		price = float(data['FormattedQuoteResult']['FormattedQuote'][0]['last'])
 		return price
