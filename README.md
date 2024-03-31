@@ -173,6 +173,8 @@ Thank you all for your suggestions for improving Stockstir!
 
 2. [PandaStacker](https://github.com/PandaStacker) for taking the time to suggest new functions for Stockstir in [this pull request](https://github.com/PatzEdi/Stockstir/pull/3). Thanks for the contributions!
 
+3. [suvanbanerjee](https://github.com/suvanbanerjee) in [pull request #8](https://github.com/PatzEdi/Stockstir/pull/8) for adding new error handling to the api class. Thanks!
+
 *Contributors in this list gave me permission to put them on the README*
 </details>
 
