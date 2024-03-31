@@ -2,6 +2,15 @@
 
 Check out the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).
 
+## CHANGELOG V2.1.6:
+
+This is release 2.1.6 of Stockstir.
+
+It includes the features of pull request #8 (Thank you for the contributions!)
+
+Pull request #8 added error handling in the api class.
+
+It also includes other minor changes, not in the codebase however.
 ## CHANGELOG V2.1.5:
 1. Constructed a cleaner README for better reading and understanding of Stockstir.
 2. Removed most of the "Stockstir V2" text about certain features being new.
