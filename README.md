@@ -130,7 +130,7 @@ Access the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.i
 - Many more features listed in the documentation.
 ## **Why?**
 - As an alternative to other systems like yfinance, Stockstir insures that you can always gather stock company data no matter what. It is a simple way to gather stock data without the need to learn full-fledged systems.
-- Real time stock data can be used to look at a specific price of any company and determine what to do with that data later on. For example, if you wanted to get notified one the price of stock goes above or below a value, it is now easier than ever to do something like that. 
+- Real time stock data can be used to look at a specific price of any company and determine what to do with that data later on. For example, if you wanted to get notified once the price of stock goes above or below a value, it is a simple task to do something like that. 
 
 ## **How?**
 - Stockstir mainly works by sending a request to *providers* (view documentation for more information), and parsing the request via a regex pattern to gather the price. It currently has three providers with a fail-safe mechanism that switches provider if the selected one fails. (Again, view documentation to learn more about providers and their functionality).
