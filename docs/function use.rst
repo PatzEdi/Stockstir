@@ -98,6 +98,7 @@ As you can see, the dictionary contains the URL of the provider as the key, and 
 The class itself also contains a ``provider_number`` variable, which can be set when you instantiate a stockstir object like so:
 
 .. code-block:: python
+    
     stockstir = Stockstir(provider = 'insider') # Here, we set the provider to Business Insiders, which is the second provider in the dictionary (in this case, the first provider is CNBC, the second is Business Insiders, and the third is Zacks)
 
 You can also switch the providers. The default is 'cnbc', but for Business Insiders it is 'insider', and Zacks it is 'zacks'. Based on the one picked, the provider_number variable will be set to the index of the provider in the dictionary.
