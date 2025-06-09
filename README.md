@@ -75,6 +75,8 @@ Installation:
 pip3 install Stockstir
 ```
 
+### Python API Usage
+
 Importing:
 ```
 from stockstir import Stockstir
@@ -84,6 +86,22 @@ Simple example to gather stock data from any script:
 price = Stockstir().tools.get_single_price("AMZN") # As an example, we can get the Amazon stock value.
 
 print(price)
+```
+
+### Command Line Usage
+
+You can also use Stockstir directly from the command line:
+```
+stockstir TSLA
+```
+
+This will display the current price of Tesla stock in your terminal.
+
+Additional options:
+```
+stockstir --help                       # Show all available options
+stockstir AAPL --provider=insider      # Use a specific provider
+stockstir MSFT --random-user-agent     # Use a random user agent for requests
 ```
 <details>
 <summary><strong>Stockstir Object Instantiation (Expand to View)</strong></summary>
@@ -126,6 +144,7 @@ Access the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.i
 - Includes a tool to create logs of the data gathered if needed, and does so by writing the data to a file at a specified directory of your choice.
 - Includes the ability to make requests with random user agents (up to 24 different agents).
 - Parameter customization of Stockstir objects (more information in the documentation).
+- Command line interface (CLI) for quick stock price lookups directly from your terminal.
 - Error handling in case of wrong inputs.
 - Many more features listed in the documentation.
 ## **Why?**

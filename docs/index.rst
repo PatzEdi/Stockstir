@@ -27,5 +27,5 @@ Index
    installation
    code structure
    function use
+   cli
    credits
-   

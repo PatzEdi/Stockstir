@@ -4,23 +4,22 @@ build-backend = "hatchling.build"
 
 [project]
 name = "Stockstir"
-version = "2.1.6"
-authors = [
-	{ name="PatzEdi", email="patzedigithub@gmail.com" }
-]
+version = "2.1.7"
+authors = [{ name = "PatzEdi", email = "patzedigithub@gmail.com" }]
 description = "Easily gather stock data of any company in any of your Python projects"
 readme = "README.md"
 keywords = ["stocks", "stockmanagement", "stockdata", "stockmarkettool"]
 requires-python = ">=3.9"
 classifiers = [
-		"Programming Language :: Python :: 3",
-		"License :: OSI Approved :: MIT License",
-		"Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
 ]
 
-dependencies = [
-  "requests"
-]
+dependencies = ["requests"]
+
+[project.scripts]
+stockstir = "stockstir.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/stockstir"]

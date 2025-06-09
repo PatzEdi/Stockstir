@@ -2,6 +2,23 @@
 
 Check out the [Stockstir ReadtheDocs Documentation](https://stockstir.readthedocs.io/en/latest/index.html).
 
+## CHANGELOG V2.1.7:
+
+This is release 2.1.7 of Stockstir.
+
+Stockstir now features a command line interface (CLI). You can call it like so:
+
+```bash
+stockstir --help
+```
+If you want to get a price:
+```bash
+stockstir AMZN
+```
+Where you can replace AMZN with the ticker/stock symbol of your choice.
+
+Note: Apologies for not updating Stockstir frequently. I am currently working on other projects.
+
 ## CHANGELOG V2.1.6:
 
 This is release 2.1.6 of Stockstir.
