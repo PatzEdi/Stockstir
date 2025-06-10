@@ -1,5 +1,5 @@
 project = 'Stockstir'
-copyright = '2023, PatzEdi'
+copyright = '2025, PatzEdi'
 author = 'PatzEdi'
 
 release = '2.0.0'
